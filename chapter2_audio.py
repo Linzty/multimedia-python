@@ -17,3 +17,6 @@ combined_audio.export('output_audio/combined_result.mp3', format='mp3')
 #konvert file audio
 audio.export('output_audio/result.wav', format='wav')
 
+#volume file audio
+louder_audio = audio - 10  # Meningkatkan volume sebesar 10dB
+louder_audio.export('output_audio/louder_result.mp3', format='mp3')
