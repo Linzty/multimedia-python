@@ -15,7 +15,7 @@ def manipulate_image(input_path, output_path):
             raise ValueError("Gambar terlalu kecil untuk di-crop ke ukuran 200x200")
 
         # Operasi Resizing dengan rasio aspek yang dipertahankan
-        resized_image = cropped_image.resize((2840, 1160), Image.Resampling.LANCZOS)
+        resized_image = cropped_image.resize((1024, 720), Image.Resampling.LANCZOS)
         resized_image.save(output_path + 'resized_result.jpg')
         print("✅ Resizing berhasil")
 
